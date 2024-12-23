@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="offwhite">#E1DFDF</color>
+    <color name="green">#69D36F</color>
+    <color name="darkgreen">#0093A0</color>
+    <color name="ferozi">#02E6FA</color>
+    <color name="bellow">#2602F3</color>
+    <color name="pink">#D506F8</color>
+    <color name="brawon">#550F0A</color>
+    <color name="red">#F11404</color>
+    <color name="card_background">#F5FFFA</color>
+    <color name="bookt_title">#2E7D32</color>
+    <color name="author_name">#388E3C</color>
+    <color name="description_text">#757575</color>
+    <color name="book_number">#1B5E20</color>
+</resources>
