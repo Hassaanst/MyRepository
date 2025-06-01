@@ -3,25 +3,36 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name=".MainApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/applogo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/applogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.JTMStudentHelper"
         tools:targetApi="31">
+
+        <!-- FileProvider configuration -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -29,10 +40,20 @@
         <activity android:name=".ClassesAboutShuruhat"/>
         <activity android:name=".ClassesAboutMidPapers"/>
         <activity android:name=".ClassesAboutFinalPapers"/>
-        <activity android:name=".booksData.presentation.FirstYearBooksDataActivity" />
-        <activity android:name=".fourthyearnotes.presentation.FourthYearNotesActivity" />
-        <activity android:name=".booksData.presentation.SecondYearBooksDataActivity"/>
-        <activity android:name=".detailActivity.presentatoin.DetailActivity"/>
+        <activity android:name=".notes.presentation.NotesActivity"/>
+        <activity android:name=".detailActivity.DetailActivity"/>
+        <activity android:name=".firstYearNotes.presentation.FirstYearNotesActivity"/>
+        <activity android:name=".secondYearNotes.presentation.SecondYearNotesActivity"/>
+        <activity android:name=".thirdYearNotes.presentation.ThirdYearNotesActivity"/>
+        <activity android:name=".fifthYearNotes.presentation.FifthYearNotesActivity"/>
+        <activity android:name=".sixthYearNotes.presentation.SixthYearNotesActivity"/>
+        <activity android:name=".seventhYearNotes.presentation.SeventhYearNotesActivity"/>
+        <activity android:name=".eighthYearNotes.presentation.EightYearNotesActivity"/>
+        <activity android:name=".messages.Message1"/>
+        <activity android:name=".messages.Message2"/>
+        <activity android:name=".messages.Message3"/>
+
+
 
     </application>
 

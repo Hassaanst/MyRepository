@@ -15,4 +15,7 @@
     <color name="author_name">#388E3C</color>
     <color name="description_text">#757575</color>
     <color name="book_number">#1B5E20</color>
+    <color name="sidelayoutcolor">#D50404</color>
+    <color name="jamni">#9404E1</color>
+    <color name="yellow">#F3A202</color>
 </resources>

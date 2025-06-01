@@ -4,6 +4,8 @@ plugins {
     id("com.google.gms.google-services")
     id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
+    id("kotlin-parcelize")
+
 }
 
 android {
@@ -80,7 +82,25 @@ dependencies {
     kapt("com.google.dagger:hilt-android-compiler:2.47")
 
 
-    // app write dependency
-    implementation("io.appwrite:sdk-for-android:6.0.0")
+    implementation ("com.github.barteksc:android-pdf-viewer:3.2.0-beta.1")
+
+
+
+    implementation ("androidx.room:room-runtime:2.6.1")
+    implementation ("androidx.room:room-ktx:2.6.1")
+    kapt ("androidx.room:room-compiler:2.5.0")
+    implementation ("androidx.room:room-testing:2.6.1")
+
+
+    implementation ("com.google.firebase:firebase-analytics:21.0.0")
+
+
+
+
+
+
+
+
+
 
 }

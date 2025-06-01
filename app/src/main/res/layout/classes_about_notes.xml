@@ -144,6 +144,7 @@
             android:src="@drawable/classesdesign"/>
 
         <TextView
+            android:id="@+id/thirdyeartxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -221,6 +222,7 @@
             android:src="@drawable/classesdesign"/>
 
         <TextView
+            android:id="@+id/fifthyeartxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -259,6 +261,7 @@
             android:src="@drawable/classesdesign"/>
 
         <TextView
+            android:id="@+id/sixthyeartxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -297,6 +300,7 @@
             android:src="@drawable/classesdesign"/>
 
         <TextView
+            android:id="@+id/seventhyeartxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -335,6 +339,7 @@
             android:src="@drawable/classesdesign"/>
 
         <TextView
+            android:id="@+id/eighthyeartxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
